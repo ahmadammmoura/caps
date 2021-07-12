@@ -19,6 +19,7 @@ events.on('pick',(payload)=>{
 
   events.emit('pick-up',obj.payload)
 
+
 })
 
 
@@ -30,13 +31,6 @@ events.on('pick',(payload)=>{
   address: faker.address.streetName()
  }
 
- function test(data){
-  events.emit('pick',data)
- }
-
-// console.log(test())
-
- module.exports = test
-
+  events.emit('pick',payload)
 
 
